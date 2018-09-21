@@ -2,11 +2,11 @@
 
 const mock = require('egg-mock');
 
-describe('test/rewrite.test.js', () => {
+describe('test/rewriter.test.js', () => {
   let app;
   before(() => {
     app = mock.app({
-      baseDir: 'apps/rewrite-test',
+      baseDir: 'apps/rewriter-test',
     });
     return app.ready();
   });
@@ -16,7 +16,7 @@ describe('test/rewrite.test.js', () => {
 
   it('should GET /', () => {
     return app.httpRequest()
-      .get('/')
+      .get('/api/foo')
       .expect('hi, rewrite')
       .expect(200);
   });

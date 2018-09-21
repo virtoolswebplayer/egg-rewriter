@@ -1,6 +1,6 @@
 {
   "name": "egg-rewriter",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "url rewrite for eggjs",
   "eggPlugin": {
     "name": "rewriter"
@@ -37,9 +37,10 @@
     "autod": "autod"
   },
   "files": [
+    "app",
+    "config",
     "app.js",
-    "agent.js",
-    "config"
+    "index.d.ts"
   ],
   "ci": {
     "version": "8, 9"
